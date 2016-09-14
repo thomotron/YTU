@@ -35,7 +35,7 @@ body {
   height: 50px !important;
 }
 .headWrapper {
-  width: 720px;
+  width: 722px;
   height: 50px;
   position: absolute;
   left: 50%;
@@ -57,7 +57,7 @@ body {
   width: 250px;
   height: 40px;
   background-color: #333;
-  border: solid 3px #252525;
+  border: 4px solid #252525;
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
@@ -80,7 +80,7 @@ body {
   display: inline-block;
   line-height: 40px;
   font-size: 16px;
-  border: 4px solid #252525;
+  border: 5px solid #252525;
   background-color: #252525;
   text-align: center;
   margin-right: -4px;
