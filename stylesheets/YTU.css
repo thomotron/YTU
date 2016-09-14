@@ -1,0 +1,169 @@
+@import url("Cabin_Bold/stylesheet.css");
+@import url("Cabin_Regular/stylesheet.css");
+@import url("Cabin_Semibold/stylesheet.css");
+
+
+
+/* Browser tweaks */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari              */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera     */
+  -khtml-user-select: none;    /* Konqueror               */
+  -moz-user-select: none;      /* Firefox                 */
+  -ms-user-select: none;       /* Internet Explorer/Edge  */
+  user-select: none;           /* Currently not supported */
+}
+*:focus  
+{  
+    outline: none;  
+} 
+
+
+
+/* General divs etc */
+body {
+  background-color: #333333;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: rgba(255,255,255,1.00);
+  font-family: "Cabin Regular";
+}
+.wide {
+  width: 100% !important;
+  height: 50px !important;
+}
+.headWrapper {
+  width: 720px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.embed {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: calc(100% - 50px);
+  border: none;
+}
+
+
+
+/* Input fields/textboxes */
+.field {
+  width: 250px;
+  height: 40px;
+  background-color: #333;
+  border: solid 3px #252525;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-left: 10px;
+  display: inline;
+  line-height: 40px;
+}
+.field:focus {
+  border-color: #FF7F00;
+  background-color: rgba(255,255,255,0.10);
+}
+.fieldLabel {
+  width: 70px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 16px;
+  border: 4px solid #252525;
+  background-color: #252525;
+  text-align: center;
+  margin-right: -4px;
+}
+
+
+
+/* Dropdowns */
+select {
+  height: 48px !important;
+  width: 266px !important;
+  
+}
+select option {
+  background-color: #333;
+}
+
+
+
+/* Checkboxes */
+input[type=checkbox] {
+  position: absolute;
+  left: -101vw;
+}
+input[type=checkbox] + label {
+  width: auto;
+  height: 20px;
+  padding-left: 28px;
+  background-image: url(../img/cbu.svg);
+  background-position: 0% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+input[type=checkbox]:checked + label {
+  background-image: url(../img/cbc.svg);
+}
+input[type=checkbox]:focus:not(:checked) + label, input[type=checkbox]:active:not(:checked) + label {
+  background-image: url(../img/cbfu.svg);
+}
+input[type=checkbox]:focus:checked + label, input[type=checkbox]:active:checked + label {
+  background-image: url(../img/cbfc.svg);
+}
+
+
+
+/* Buttons */
+/* Buttons are wrapped inside anchors as an href workaround */
+a button {
+  width: 200px;
+  height: 50px;
+  border: solid 3px;
+  color: #333;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+a button.orange {
+  border-color: #FF7F00;
+  background-color: #FF7F00;
+  color: #333;
+}
+a button.grey {
+  border-color: #222;
+  background-color: #222;
+  color: #FFF;
+}
+a button.orange:active {
+  border-color: #b25900;
+  background-color: #b25900;
+  color: #191919;
+}
+a button.grey:active {
+  border-color: #191919;
+  background-color: #191919;
+  color: #cccccc;
+}
+a button.disabled {
+  border-color: #222;
+  background-color: #222;
+  color: #353535;
+  cursor: not-allowed;
+}

@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Cabin Semibold';
+	src: url('Cabin-SemiBold.eot');
+	src: url('Cabin-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('Cabin-SemiBold.woff') format('woff'),
+		url('Cabin-SemiBold.ttf') format('truetype');
+}
